@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <title>marketplace</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
+  <title>marketplace</title>
 </head>
 <body>
   <div class="container">
-    <h1>Ben's Marketplace</h1>
-    <form id="name">
-      <div class="form-group">
-        <label for="full-name">Your Name:</label>
-        <input id="full-name" class="form-control" type="text">
-      </div>
-    </form>
-    <form id="add">
-      <div class="form-group">
-        <label for="Address">Your Address:</label>
-        <input id="Address" class="form-control" type="text">
-      </div>
-    </form>
+    <h1>Welcome to Ben's Marketplace!</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Your Address</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn">View Receipt</button>
+      </form>
+    </div>
+
+    <div id="receipt">
+      <h1>Your receipt</h1>
+      <p>
+        Thank you for your guitar purchase <span class="name"></span>. Your item will ship here: <span class="address"></span> 
+      </p>
+    </div>
   </div>
 </body>
 </html>
